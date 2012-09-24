@@ -5,10 +5,10 @@ app = Flask(__name__)   # create our flask app
 # this is our main page
 @app.route("/")
 def index():
-    return """The ITP Database<br/><br/>
-    <p><h2> Find out where ITP alumni ended up after leaving the floor. <h2>
-    <a href='/page2'>View list of students by class</a><br>
-    <a href='/form'>Login</a>"""
+    return """<h2>The ITP Database<br/><br/></h2>
+    <p>Find out where ITP alumni end up after leaving the floor.
+    <a href='/form'>Login</a>
+    <a href='/page2'>View list of students by class</a><br>"""
 
 
 # this is the 2nd route - can be accessed with /page2
@@ -28,7 +28,7 @@ def simpleform():
 		user_name = request.form.get('user_name', 'Tim Berners-Lee')
 
 		# return custom HTML using the user submitted data
-		return "<html><body><h3>Hello %s! What an interesting name.</h3><br><a href='/form'>back to form</a></body><html>" % user_name
+		return "<html><body><h3>Sorry %s, you are not yet in our system. Are you sure you went to ITP? </h3><br><a href='/form'>back to form</a></body><html>" % user_name
 
 	else:
 
