@@ -14,7 +14,7 @@ def index():
 # this is the 2nd route - can be accessed with /page2
 @app.route("/page2")
 def page2():
-	return "<h2>Welcome to page 2</h2><p>This is just amazing!</p>"
+	return "<h2>In order to view this page, you must first <strong>long in </strong></h2><p></p>"
 
 
 # new route will accept both a GET and POST request from the client (web browser)
