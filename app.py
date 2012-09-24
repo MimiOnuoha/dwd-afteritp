@@ -7,8 +7,8 @@ app = Flask(__name__)   # create our flask app
 def index():
     return """<h2>The ITP Database<br/><br/></h2>
     <p>Find out where ITP alumni end up after leaving the floor.
-    <a href='/form'>Login</a>
-    <a href='/page2'>View list of students by class</a><br>"""
+    <p><a href='/form'>Login</a>
+    <p><a href='/page2'>View list of students by class</a><br>"""
 
 
 # this is the 2nd route - can be accessed with /page2
